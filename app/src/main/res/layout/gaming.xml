@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linear_one"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <RelativeLayout
+            android:id="@+id/number_one"
+            android:layout_width="0dp"
+            android:background="@drawable/non_selector"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:padding="5dp" >
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                layout="@layout/seat_item" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/number_two"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/non_selector"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:padding="5dp" >
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                layout="@layout/seat_item" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/number_three"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/non_selector"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:padding="5dp" >
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                layout="@layout/seat_item" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/number_four"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/non_selector"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:padding="5dp" >
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                layout="@layout/seat_item" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_two"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <RelativeLayout
+            android:id="@+id/number_five"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/non_selector"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:padding="5dp" >
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                layout="@layout/seat_item" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/number_six"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/non_selector"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:padding="5dp" >
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                layout="@layout/seat_item" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/number_seven"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/non_selector"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:padding="5dp" >
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                layout="@layout/seat_item" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/number_eight"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/non_selector"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:padding="5dp" >
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                layout="@layout/seat_item" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_three"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <RelativeLayout
+            android:id="@+id/number_nine"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/non_selector"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:padding="5dp" >
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                layout="@layout/seat_item" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/number_ten"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/non_selector"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:padding="5dp" >
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                layout="@layout/seat_item" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/number_eleven"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/non_selector"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:padding="5dp" >
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                layout="@layout/seat_item" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/number_twelve"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/non_selector"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:padding="5dp" >
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                layout="@layout/seat_item" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linear_four"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <RelativeLayout
+            android:id="@+id/number_thirteen"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/non_selector"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:padding="5dp" >
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                layout="@layout/seat_item" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/number_fourteen"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/non_selector"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:padding="5dp" >
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                layout="@layout/seat_item" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/number_fifteen"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/non_selector"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:padding="5dp" >
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                layout="@layout/seat_item" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/number_sixteen"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/non_selector"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:padding="5dp" >
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                layout="@layout/seat_item" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="wrap_content"
+            android:id="@+id/countTime"
+            android:gravity="center"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:id="@+id/actionName"
+            android:layout_height="wrap_content"
+            android:text="@string/vote_part_one"
+            android:gravity="center"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/voteNum"
+            android:textSize="20sp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:layout_height="wrap_content"
+            android:text="@string/vote_part_two"
+            android:gravity="center"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="wrap_content"
+            android:id="@+id/abandon"
+            android:text="@string/abstained"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="wrap_content"
+            android:id="@+id/confirm"
+            android:text="@string/confirm"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <RelativeLayout
+            android:layout_width="80dp"
+            android:id="@+id/linear_days"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_above="@+id/sendGameMsg"
+            android:padding="1dp">
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/days_selector"
+                android:dividerHeight="1dp"
+                android:transcriptMode="alwaysScroll">
+
+            </ListView>
+
+
+        </RelativeLayout>
+        
+        <ListView
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:id="@+id/game_msg"
+            android:dividerHeight="1dp"
+            android:transcriptMode="alwaysScroll"
+            android:layout_alignParentTop="true"
+            android:layout_above="@+id/sendGameMsg"
+        	android:layout_toStartOf="@+id/view"
+            android:layout_toLeftOf="@+id/view"
+            android:layout_toEndOf="@+id/linear_days"
+            android:layout_toRightOf="@+id/linear_days">
+            
+        </ListView>
+        
+		<View
+        	android:layout_width="1.0dip"
+        	android:layout_height="wrap_content"
+        	android:id="@+id/view"
+        	android:background="@android:color/darker_gray"
+            android:layout_above="@+id/sendGameMsg"
+        	android:layout_toStartOf="@+id/scrollView"
+            android:layout_toLeftOf="@+id/scrollView"/>
+
+        <ScrollView
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_above="@+id/sendGameMsg"
+            android:id="@+id/scrollView" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:id="@+id/linear_tools"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:id="@+id/select_emoji"
+                    android:src="@drawable/show_face"
+                    android:clickable="true"
+                    android:scaleType="fitCenter"/>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="8dp"
+                    android:id="@+id/kill_self"
+                    android:src="@drawable/kill_self"
+                    android:visibility="gone"
+                    android:clickable="true"
+                    android:scaleType="fitCenter"/>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="8dp"
+                    android:id="@+id/end_speak"
+                    android:src="@drawable/end_speak"
+                    android:visibility="gone"
+                    android:clickable="true"
+                    android:scaleType="fitCenter"/>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="8dp"
+                    android:id="@+id/abandon_election"
+                    android:src="@drawable/abandon_election"
+                    android:visibility="gone"
+                    android:clickable="true"
+                    android:scaleType="fitCenter"/>
+
+            </LinearLayout>
+        </ScrollView>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_toStartOf="@+id/sendGameMsg"
+            android:layout_toLeftOf="@+id/sendGameMsg"
+            android:layout_alignTop="@+id/sendGameMsg"
+        	android:layout_alignParentBottom="true"
+            android:id="@+id/msg"
+            android:hint="@string/ready_room_talk" />
+
+        <Button
+            android:id="@+id/sendGameMsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+        	android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:text="@string/send" >
+        </Button>
+		
+    </RelativeLayout>
+
+</LinearLayout>

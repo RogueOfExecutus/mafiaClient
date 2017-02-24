@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+	android:padding="5dp"
+    android:orientation="horizontal" >
+    
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:id="@+id/room_icon"
+		android:layout_alignParentStart="true"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentTop="true"
+        android:scaleType="centerInside" />
+	<ImageView
+		android:layout_width="20dp"
+		android:layout_height="20dp"
+		android:id="@+id/room_lock"
+		android:layout_toStartOf="@+id/msg_layout"
+		android:layout_toLeftOf="@+id/msg_layout"
+		android:layout_alignParentBottom="true"
+		android:scaleType="centerInside"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+		android:id="@+id/msg_layout"
+		android:layout_toEndOf="@+id/room_icon"
+		android:layout_toRightOf="@+id/room_icon"
+		android:layout_marginStart="5dp"
+		android:layout_marginLeft="5dp"
+		android:layout_alignParentEnd="true"
+		android:layout_alignParentRight="true">
+
+		<ImageView
+			android:layout_width="30dp"
+			android:layout_height="30dp"
+			android:id="@+id/room_state"
+			android:layout_alignParentEnd="true"
+			android:layout_alignParentRight="true"
+			android:layout_alignParentTop="true"
+			android:scaleType="centerInside"/>
+        <TextView 
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:textSize="14sp"
+			android:layout_alignParentTop="true"
+			android:layout_alignParentStart="true"
+			android:layout_alignParentLeft="true"
+        	android:id="@+id/room_name"/>
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentEnd="true"
+			android:layout_alignParentRight="true"
+			android:textSize="10sp"
+			android:layout_alignParentTop="true"
+			android:textColor="@android:color/holo_red_dark"
+			android:id="@+id/room_people"/>
+        <TextView
+            android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+			android:layout_below="@+id/room_name"
+			android:textSize="10sp"
+        	android:id="@+id/room_field"/>
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/room_field"
+			android:textSize="10sp"
+			android:id="@+id/room_witch_lastword"/>
+        
+    </RelativeLayout>
+        
+
+</RelativeLayout>

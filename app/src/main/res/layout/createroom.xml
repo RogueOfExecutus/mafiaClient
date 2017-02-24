@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp" >
+
+    <TextView
+        android:id="@+id/roomTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/game_title" />
+
+    <EditText
+        android:id="@+id/roomName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_alignParentStart="true"
+        android:hint="@string/game_title_hint"
+        android:layout_below="@+id/roomTitle"
+        android:background="@null"
+        android:ems="10"
+        android:maxLength="6"
+        android:textSize="20sp"
+        android:layout_alignParentLeft="true">
+
+        <requestFocus />
+    </EditText>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/using_password"
+        android:layout_marginTop="3dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/roomName"
+        android:text="@string/using_room_password"
+        android:layout_alignParentLeft="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/room_password"
+        android:labelFor="@+id/room_password"
+        android:inputType="number"
+        android:visibility="gone"
+        android:hint="123"
+        android:maxLength="6"
+        android:layout_toEndOf="@+id/using_password"
+        android:layout_below="@+id/roomName"
+        android:layout_above="@+id/mensGroup"
+        android:layout_toRightOf="@+id/using_password" />
+
+    <RadioGroup
+        android:id="@+id/mensGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/using_password"
+        android:orientation="horizontal"
+        android:layout_alignParentLeft="true">
+
+        <RadioButton
+            android:id="@+id/eightMen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/eight_men" />
+
+        <RadioButton
+            android:id="@+id/twelveMen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/twelve_men" />
+    </RadioGroup>
+
+    <Switch
+        android:id="@+id/using_audio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/mensGroup"
+        android:text="@string/audio"
+        android:layout_alignParentLeft="true" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/god_num"
+        android:entries="@array/number"
+        android:layout_below="@+id/using_audio"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/god"
+        android:id="@+id/god_text"
+        android:textSize="20sp"
+        android:layout_marginBottom="3dp"
+        android:layout_above="@+id/use_witch"
+        android:layout_toEndOf="@+id/god_num"
+        android:layout_toRightOf="@+id/god_num" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/wolf_num"
+        android:entries="@array/number"
+        android:layout_below="@+id/using_audio"
+        android:layout_toEndOf="@+id/god_text"
+        android:layout_toRightOf="@+id/god_text" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/wolf"
+        android:id="@+id/wolf_text"
+        android:textSize="20sp"
+        android:layout_marginBottom="3dp"
+        android:layout_above="@+id/use_witch"
+        android:layout_toEndOf="@+id/wolf_num"
+        android:layout_toRightOf="@+id/wolf_num" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/villager_text"
+        android:textSize="20sp"
+        android:layout_marginBottom="3dp"
+        android:layout_above="@+id/use_witch"
+        android:layout_toEndOf="@+id/wolf_text"
+        android:layout_toRightOf="@+id/wolf_text" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/witch"
+        android:id="@+id/use_witch"
+        android:layout_below="@+id/god_num"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hunter"
+        android:id="@+id/use_hunter"
+        android:layout_below="@+id/god_num"
+        android:layout_toEndOf="@+id/use_witch"
+        android:layout_toRightOf="@+id/use_witch" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/guard"
+        android:id="@+id/use_guard"
+        android:layout_below="@+id/god_num"
+        android:layout_toEndOf="@+id/use_hunter"
+        android:layout_toRightOf="@+id/use_hunter" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/idiot"
+        android:id="@+id/use_idiot"
+        android:layout_below="@+id/use_guard"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/thief"
+        android:id="@+id/use_thief"
+        android:layout_below="@+id/use_guard"
+        android:layout_toEndOf="@+id/use_idiot"
+        android:layout_toRightOf="@+id/use_idiot" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/seer"
+        android:id="@+id/use_seer"
+        android:layout_below="@+id/use_guard"
+        android:layout_toEndOf="@+id/use_thief"
+        android:layout_toRightOf="@+id/use_thief" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/days_one_one"
+        android:textSize="20sp"
+        android:layout_marginBottom="3dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignBottom="@+id/last_word_days"
+        android:text="@string/days_one"
+        android:layout_alignParentLeft="true" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/last_word_days"
+        android:entries="@array/zero_number"
+        android:layout_below="@+id/use_idiot"
+        android:layout_toEndOf="@+id/days_one_one"
+        android:layout_toRightOf="@+id/days_one_one" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginBottom="3dp"
+        android:layout_toEndOf="@+id/last_word_days"
+        android:layout_alignBottom="@+id/last_word_days"
+        android:text="@string/last_word_days"
+        android:layout_toRightOf="@+id/last_word_days" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/days_one_two"
+        android:textSize="20sp"
+        android:visibility="gone"
+        android:layout_marginBottom="3dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignBottom="@+id/save_self_days"
+        android:text="@string/days_one"
+        android:layout_alignParentLeft="true" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/save_self_days"
+        android:visibility="gone"
+        android:entries="@array/zero_number"
+        android:layout_below="@+id/last_word_days"
+        android:layout_toEndOf="@+id/days_one_two"
+        android:layout_toRightOf="@+id/days_one_two" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:visibility="gone"
+        android:id="@+id/witch_save_two"
+        android:layout_marginBottom="3dp"
+        android:layout_toEndOf="@+id/save_self_days"
+        android:layout_alignBottom="@+id/save_self_days"
+        android:text="@string/save_self_days"
+        android:layout_toRightOf="@+id/save_self_days" />
+
+</RelativeLayout>

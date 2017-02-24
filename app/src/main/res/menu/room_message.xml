@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.wenyi.mafia.GameRoomActivity" >
+
+    <item
+        android:id="@+id/check_room"
+        android:orderInCategory="100"
+        android:showAsAction="ifRoom"
+        android:title="@string/room_message"
+        android:icon="@drawable/room_message"/>
+
+</menu>

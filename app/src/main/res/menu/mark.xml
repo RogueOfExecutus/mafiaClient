@@ -1,0 +1,54 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.wenyi.mafia.GamingActivity" >
+
+    <item
+        android:id="@+id/unknow_id"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/unknow"/>
+    <item
+        android:id="@+id/god_id"
+        android:orderInCategory="200"
+        android:showAsAction="never"
+        android:title="@string/god">
+        <menu>
+            <item
+                android:id="@+id/seer_id"
+                android:orderInCategory="100"
+                android:showAsAction="never"
+                android:title="@string/seer"/>
+            <item
+                android:id="@+id/hunter_id"
+                android:orderInCategory="200"
+                android:showAsAction="never"
+                android:title="@string/hunter"/>
+            <item
+                android:id="@+id/witch_id"
+                android:orderInCategory="300"
+                android:showAsAction="never"
+                android:title="@string/witch"/>
+            <item
+                android:id="@+id/guard_id"
+                android:orderInCategory="400"
+                android:showAsAction="never"
+                android:title="@string/guard"/>
+            <item
+                android:id="@+id/idiot_id"
+                android:orderInCategory="500"
+                android:showAsAction="never"
+                android:title="@string/idiot"/>
+        </menu>
+    </item>
+    <item
+        android:id="@+id/wolf_id"
+        android:orderInCategory="300"
+        android:showAsAction="never"
+        android:title="@string/wolf"/>
+    <item
+        android:id="@+id/villager_id"
+        android:orderInCategory="400"
+        android:showAsAction="never"
+        android:title="@string/villager"/>
+
+</menu>
